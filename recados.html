@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MEUS RECADOS</title>
+    <link rel="stylesheet" href="./css/styles.css" /> 
+</head>
+
+<body>
+    <div class="fundo-recados">
+        <div class="container-recados">
+            <div class="alinhamento-linhas">
+                <h1 class="recados-texto">MEUS RECADOS</h1>
+                <button type="submit" id="botao-sair-recados" style="float:right">Sair</button>
+            </div>
+            
+
+            <form id="form-cadastro">
+                <input type="text" name="titulo-recado" id="input-titulo" class="inputRecados" placeholder="Descrição" size="40"/>
+                <input type="text" name="descricao-recado" id="input-descricao" class="inputRecados" placeholder="Detalhamento" size="84"/>
+                <button type="submit" id="btn-salvar">Salvar</button>
+                
+            </form>
+            
+            <table id="tabela-registros">
+                <tr class="alinhamento">
+                    <th class="registro-indice">#</th>
+                    <th class="descricao-th">Descrição</th>
+                    <th class="detalhamento-th">Detalhamento</th>
+                    <th class="acoes-th">Ações</th>
+                </tr>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+    </div>  
+    <script src="./js/recados.js"></script>
+</body>
+</html>
