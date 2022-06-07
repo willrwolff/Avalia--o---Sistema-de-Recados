@@ -18,7 +18,7 @@ emailCadastro.addEventListener('keyup', verificaEmail);
 
 function verificaEmail() {
     if(emailCadastro.value.length < 7) { 
-        labelEmail.setAttribute('style', 'color: red');
+        labelEmail.setAttribute('style', 'color: orange');
         labelEmail.innerHTML = 'Insira no mínimo 7 caracteres';
         emailCadastro.setAttribute('style', 'display: block; margin-bottom: 5px; margin-top: 5px; width: 323px; border: 2px solid red;')
         validaEmail = false
@@ -35,10 +35,10 @@ function verificaSenha(){
     let senhaValida = senhaCadastro.value.match(regSenha);
 
     if(senhaCadastro.value.length < 6) { 
-        labelSenha.setAttribute('style', 'color: red');
+        labelSenha.setAttribute('style', 'color: orange');
         labelSenha.innerHTML = 'Insira no mínimo 6 caracteres';
-        senhaCadastro.setAttribute('style', 'display: block; margin-bottom: 5px; margin-top: 5px; width: 323px; border: 2px solid red;')
-        emailCadastro.setAttribute('style', 'display: block; width: 323px; border: 2px solid green; margin-bottom: 7px')
+        senhaCadastro.setAttribute('style', 'display: block; margin-bottom: 5px; margin-top: 5px; width: 323px; border: 2px red;')
+        emailCadastro.setAttribute('style', 'display: block; width: 323px; border: 2px green; margin-bottom: 7px')
         validaSenha = false
    } else if (senhaValida == null) {
         labelSenha.innerHTML = 'Deve conter uma letra maíuscula, um número e um caracter especial'
@@ -54,7 +54,7 @@ repetirSenhaCadastro.addEventListener('keyup', verificaRepetirSenha);
 
 function verificaRepetirSenha(){
     if (senhaCadastro.value != repetirSenhaCadastro.value) {
-        labelRepetirSenha.setAttribute('style', 'color: red');
+        labelRepetirSenha.setAttribute('style', 'color: orange');
         labelRepetirSenha.innerHTML = 'As senhas são diferentes';
         repetirSenhaCadastro.setAttribute('style', 'display: block; margin-bottom: 5px; margin-top: 5px; width: 323px; border: 2px solid red;')
         senhaCadastro.setAttribute('style', 'display: block; width: 323px; border: 2px solid green; margin-bottom: 7px')

@@ -1,6 +1,3 @@
-//PAGINA-HOME
-
-//ELEMENTOS DO FORMULÁRIO
 let botaoSalvar = document.querySelector("#btn-salvar");
 let inputRegistro = document.querySelector("#input-registro");
 let inputTitulo = document.querySelector("#input-titulo");
